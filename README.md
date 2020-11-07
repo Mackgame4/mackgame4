@@ -1,5 +1,9 @@
-### Hi there 👋  
-#### My name is Mack im 16y actually student and front-end and some back-end developer as hobby and this is my profile!  
+## Hi there, welcome to Mack's Github Profile 👋  
+### My name is Mack im 16y actually student and front-end and some back-end developer as hobby and this is my github profile where i post some open-source code and some projects and prototypes!
+
+#### Follow me on:
+- 🔭 Github: https://github.com/Mackgame4
+- 💬 Discord: https://discord.io/mack or add me using [🍹MrMack.exe🍹#0001]
 
 [![Mackgame4's github stats](https://github-readme-stats.vercel.app/api?username=Mackgame4)](https://github.com/anuraghazra/github-readme-stats)  
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Mackgame4&layout=compact)](https://github.com/anuraghazra/github-readme-stats)  
