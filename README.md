@@ -3,7 +3,7 @@
 
 #### Follow me on:
 - 🔭 Github: https://github.com/Mackgame4
-- 💬 Discord: https://discord.io/mack or add me using [🍹MrMack.exe🍹#2173]
+- 💬 Discord: https://discord.io/mack or add me using [<span id="discord">🍹MrMack.exe🍹#2173</span>]
 
 <!--
 ### Spotify Playing 🎧
