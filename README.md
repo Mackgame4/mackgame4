@@ -1,9 +1,9 @@
 ## Hi there, welcome to Mack's Github Profile 👋  
-<h4 class="description"> My name is Mack im 17y actually student and front-end and some back-end developer as hobby and this is my github profile where i post some open-source code and some projects and prototypes!</h4>
+<h4 class="description"> My name is Mack im 18y actually student and front-end and some back-end developer as hobby and this is my github profile where i post some open-source code and some projects and prototypes!</h4>
 
 #### Follow me on:
 - 🔭 Github: https://github.com/Mackgame4
-- 💬 Discord: https://discord.io/mack or add me using [<span id="discord">🍹MrMack.exe🍹#2173</span>]
+- 💬 Discord: https://discord.io/mack or add me using [<span id="discord">`📂 cd ./System32/Mack.exe#2173`</span>]
 
 <!--
 ### Spotify Playing 🎧
