@@ -1,6 +1,7 @@
 import {
   Document,
   Font,
+  //View,
   Text,
   Page,
   StyleSheet,
@@ -32,16 +33,8 @@ const styles = StyleSheet.create({
 
 const Doc = () => (
   <Document>
-    <Page style={styles.body}>
-      <Text style={styles.title}>Title</Text>
-      <Text style={styles.text}>
-        Text
-      </Text>
-      <Text
-        fixed
-        style={styles.text}
-        render={({ pageNumber, totalPages }) => `${pageNumber} / ${totalPages}`}
-      />
+    <Page size="A4" orientation="portrait" style={styles.body}> {/* Define the page structure */}
+      <Text style={styles.title}>My first React PDF</Text>
     </Page>
   </Document>
 );
