@@ -83,15 +83,29 @@ export const Config = {
         }
     ],
 
+    summarize: 'I am a software engineer with a passion for developing and designing software. I am currently studying Computer Science at the University of Minho, where I am learning about the fundamentals of computer science, algorithms, data structures, and software engineering. I am also a full stack developer with experience in web development, mobile development, and game development.',
+
+    experience: [
+        {
+            src: 'https://www.uminho.pt/',
+            title: 'Software Engineer Intern',
+            date: '2022 - 2024',
+            company: 'University of Minho',
+            location: 'Braga, Portugal',
+            description: 'Currently studying Computer Science at the University of Coimbra. I am learning about the fundamentals of computer science, algorithms, data structures, and software engineering.'
+        }
+    ],
+
     education: [
         {
+            src: 'https://www.uminho.pt/',
             title: 'Bachelor in Computer Science & Software Engineering',
             date: '2022 - 2024',
             institution: 'University of Minho',
             location: 'Braga, Portugal',
             description: 'Currently studying Computer Science at the University of Coimbra. I am learning about the fundamentals of computer science, algorithms, data structures, and software engineering.'
         }
-    ],
+    ]
 };
 
 export const locales = {

@@ -28,11 +28,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15
   },
   leftContainer: {
-    width: '50%',
+    width: '55%',
     alignItems: 'flex-start',
   },
   rightContainer: {
-    width: '50%',
+    width: '45%',
     alignItems: 'flex-end',
   },
   title: {
@@ -77,8 +77,7 @@ const styles = StyleSheet.create({
     fontFamily: 'JetBrainsMono-Regular',
     color: colorVars.accentColor,
     letterSpacing: 1,
-    textDecoration: 'none',
-    textAlign: 'center'
+    textDecoration: 'none'
   }
 });
 
@@ -88,15 +87,40 @@ const Doc = () => (
       <DocHeader />
       <View style={styles.content}>
         <View style={styles.leftContainer}>
+          {/** Summarize Section */}
+          <Text style={styles.text}>{Config.summarize}</Text>
           {/** WorkExperience Section */}
-          <Text style={styles.title}>WORK EXPERIENCE</Text>
+          <Text style={[styles.title, { marginTop: 20 }]}>WORK EXPERIENCE</Text>
+          {Config.experience.map((job, index) => (
+            <View key={index} style={{ marginTop: 5, textAlign: 'left', alignItems: 'flex-start' }}>
+              <Link src={job.src} style={{ textDecoration: 'none' }}>
+                <Text style={styles.footerText}>{job.date}</Text>
+                <Text style={styles.text}>{job.title}</Text>
+                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                  <Text style={styles.footerText}>{job.company} - {job.location}</Text>
+                  <PdfIcon height={7} name="externalLinkIcon" color={colorVars.primaryColor} isOutlined />
+                </View>
+              </Link>
+              {job.description &&
+              <Text style={[styles.footerText, { marginTop: 10 }]}>{job.description}</Text>
+              }
+            </View>
+          ))}
           {/** Education Section */}
           <Text style={[styles.title, { marginTop: 20 }]}>EDUCATION</Text>
           {Config.education.map((edu, index) => (
             <View key={index} style={{ marginTop: 5, textAlign: 'left', alignItems: 'flex-start' }}>
-              <Text style={styles.footerText}>{edu.date}</Text>
-              <Text style={styles.text}>{edu.title}</Text>
-              <Text style={styles.footerText}>{edu.institution} - {edu.location}</Text>
+              <Link src={edu.src} style={{ textDecoration: 'none' }}>
+                <Text style={styles.footerText}>{edu.date}</Text>
+                <Text style={styles.text}>{edu.title}</Text>
+                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                  <Text style={styles.footerText}>{edu.institution} - {edu.location}</Text>
+                  <PdfIcon height={7} name="externalLinkIcon" color={colorVars.primaryColor} isOutlined />
+                </View>
+              </Link>
+              {edu.description &&
+              <Text style={[styles.footerText, { marginTop: 10 }]}>{edu.description}</Text>
+              }
             </View>
           ))}
         </View>
