@@ -13,6 +13,72 @@ export const Config = {
     githuLink: 'http://github.com/Mackgame4',
     linkedInUsername: 'mackgame4',
     linkedInLink: 'http://linkedin.com/in/mackgame4',
+
+    skills: [
+        'Trouble Shooting',
+        'Problem Solving',
+        'Team Work',
+        'Workflow Development',
+        'Computer/Hardware Skills',
+        'Adaptability/Creativity'
+    ],
+
+    tools: [
+        {
+            name: 'JavaScript/TypeScript',
+            level: 100
+        },
+        {
+            name: 'React/Vue/AstroJS',
+            level: 90
+        },
+        {
+            name: 'C/Lua',
+            level: 95
+        },
+        {
+            name: 'Python/Haskell',
+            level: 80
+        },
+        {
+            name: 'HTML/CSS',
+            level: 100
+        },
+        {
+            name: 'Git/Batch/Bash',
+            level: 80
+        },
+        {
+            name: 'Java',
+            level: 95
+        },
+        {
+            name: 'MySQL/MongoDB',
+            level: 100
+        },
+        {
+            name: 'VSCode/IntelliJ',
+            level: 100
+        },
+        {
+            name: 'Figma/Adobe Photoshop',
+            level: 55
+        },
+        {
+            name: 'Assembly/ASM',
+            level: 40
+        }
+    ],
+
+    education: [
+        {
+            title: 'Bachelor in Computer Science & Software Engineering',
+            date: '2022 - 2024',
+            institution: 'University of Minho',
+            location: 'Braga, Portugal',
+            description: 'Currently studying Computer Science at the University of Coimbra. I am learning about the fundamentals of computer science, algorithms, data structures, and software engineering.'
+        }
+    ],
 };
 
 export const locales = {

@@ -57,6 +57,14 @@ const styles = StyleSheet.create({
     textDecoration: 'underline',
   },
   skillText: {
+    fontSize: 10,
+    fontFamily: 'JetBrainsMono-Regular',
+    color: colorVars.textColor,
+    letterSpacing: 0.5,
+    textDecoration: 'none',
+    marginTop: 5
+  },
+  progbarText: {
     fontSize: 9,
     fontFamily: 'JetBrainsMono-Regular',
     color: colorVars.textColor,
@@ -64,6 +72,14 @@ const styles = StyleSheet.create({
     textDecoration: 'none',
     marginTop: 5
   },
+  footerText: {
+    fontSize: 7,
+    fontFamily: 'JetBrainsMono-Regular',
+    color: colorVars.accentColor,
+    letterSpacing: 1,
+    textDecoration: 'none',
+    textAlign: 'center'
+  }
 });
 
 const Doc = () => (
@@ -76,7 +92,7 @@ const Doc = () => (
         <View style={styles.rightContainer}>
           {/** Contacts Section */}
           <Text style={styles.title}>{ln('contact')}</Text>
-          <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 7 }}>
+          <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 5 }}>
             <PdfIcon height={12} name="phoneIcon" color={colorVars.primaryColor} isOutlined />
             <Text style={[styles.text, { marginLeft: 5, letterSpacing: 0.5 }]}>{Config.phoneNumber}</Text>
           </View>
@@ -94,26 +110,26 @@ const Doc = () => (
           </View>
           {/** Skills Section */}
           <Text style={[styles.title, { marginTop: 20 }]}>SKILLS</Text>
-          <Text style={styles.skillText}>JavaScript/TypeScript</Text>
-          <PdfProgBar value={100} width={150} height={4} isOutlined />
-          <Text style={styles.skillText}>React/Vue/AstroJS</Text>
-          <PdfProgBar value={90} width={150} height={4} isOutlined />
-          <Text style={styles.skillText}>C/Lua</Text>
-          <PdfProgBar value={95} width={150} height={4} isOutlined />
-          <Text style={styles.skillText}>Python/Haskell</Text>
-          <PdfProgBar value={80} width={150} height={4} isOutlined />
-          <Text style={styles.skillText}>HTML/CSS</Text>
-          <PdfProgBar value={100} width={150} height={4} isOutlined />
-          <Text style={styles.skillText}>Git/Batch</Text>
-          <PdfProgBar value={70} width={150} height={4} isOutlined />
-          <Text style={styles.skillText}>Java</Text>
-          <PdfProgBar value={95} width={150} height={4} isOutlined />
-          <Text style={styles.skillText}>MySQL/MongoDB</Text>
-          <PdfProgBar value={100} width={150} height={4} isOutlined />
+          {Config.skills.map((skill, index) => (
+            <Text key={index} style={styles.skillText}>{skill}</Text>
+          ))}
           {/** Tools Section */}
           <Text style={[styles.title, { marginTop: 20 }]}>TOOLS</Text>
+          {Config.tools.map((tool, index) => (
+            <View key={index} style={{ textAlign: 'right', alignItems: 'flex-end' }}>
+              <Text style={styles.progbarText}>{tool.name}</Text>
+              <PdfProgBar value={tool.level} width={150} height={4} isOutlined />
+            </View>
+          ))}
           {/** Education Section */}
           <Text style={[styles.title, { marginTop: 20 }]}>EDUCATION</Text>
+          {Config.education.map((edu, index) => (
+            <View key={index} style={{ marginTop: 5, textAlign: 'right', alignItems: 'flex-end' }}>
+              <Text style={styles.footerText}>{edu.date}</Text>
+              <Text style={styles.text}>{edu.title}</Text>
+              <Text style={styles.footerText}>{edu.institution} - {edu.location}</Text>
+            </View>
+          ))}
         </View>
       </View>
     </Page>
