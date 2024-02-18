@@ -9,6 +9,7 @@ import {
 } from '@react-pdf/renderer';
 
 import { colorVars } from './Utils';
+import { Config } from './Config';
 
 import DocHeader from './components/docHeader';
 import PdfIcon from './components/pdfIcons';
@@ -64,22 +65,22 @@ const Doc = () => (
         <View style={styles.leftContainer}>
         </View>
         <View style={styles.rightContainer}>
-          <Text style={styles.title}>CONTACTO</Text>
+          <Text style={styles.title}>CONTACTOS</Text>
           <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 7 }}>
             <PdfIcon height={12} name="phoneIcon" color={colorVars.primaryColor} isOutlined />
-            <Text style={[styles.text, { marginLeft: 5, letterSpacing: 0.5 }]}>(+351) 910 000 000</Text>
+            <Text style={[styles.text, { marginLeft: 5, letterSpacing: 0.5 }]}>{Config.phoneNumber}</Text>
           </View>
           <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 2 }}>
             <PdfIcon height={12} name="emailIcon" color={colorVars.primaryColor} isOutlined />
-            <Text style={[styles.link, { marginLeft: 5 }]}>email@gmail.com</Text>
+            <Text style={[styles.link, { marginLeft: 5 }]}>{Config.email}</Text>
           </View>
           <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 2 }}>
             <PdfIcon height={12} name="githubIcon" color={colorVars.primaryColor} isOutlined />
-            <Link style={[styles.link, { marginLeft: 5 }]} src="http://github.com/Mackgame4">@Mackgame4</Link>
+            <Link style={[styles.link, { marginLeft: 5 }]} src={Config.githuLink}>@{Config.githubUsername}</Link>
           </View>
           <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 2 }}>
             <PdfIcon height={12} name="linkedInIcon" color={colorVars.primaryColor} isOutlined />
-            <Link style={[styles.link, { marginLeft: 5 }]} src="http://linkedin.com/in/mackgame4">@mackgame4</Link>
+            <Link style={[styles.link, { marginLeft: 5 }]} src={Config.linkedInLink}>@{Config.linkedInUsername}</Link>
           </View>
         </View>
       </View>

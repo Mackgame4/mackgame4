@@ -90,13 +90,32 @@ Font.register({
     src: '/fonts/JetBrainsMono-LightItalic.ttf'
 });
 
-export const colorVars = {
-    primaryColor: '#017E05',
-    secondaryColor: '#33362F',
-    accentColor: '#A2A498',
-    textColor: '#2B312E',
-    backgroudColor: '#FDFDF5'
+export const themes = {
+    green: {
+        light: {
+            primaryColor: '#017E05',
+            secondaryColor: '#33362F',
+            accentColor: '#A2A498',
+            textColor: '#2B312E',
+            backgroudColor: '#FDFDF5'
+        },
+        dark: {
+            primaryColor: '#017E05',
+            secondaryColor: '#33362F',
+            accentColor: '#A2A498',
+            textColor: '#2B312E',
+            backgroudColor: '#FDFDF5'
+        },
+    },
 };
+
+export function getTheme(theme: string) {
+    const [themeName, mode] = theme.split('-');
+    return themes[themeName][mode];
+}
+
+import { Config } from './Config';
+export const colorVars = getTheme(Config.defaultTheme);
 
 /*export function mergeStyles(...styles: unknown[]) {
     return Object.assign({}, ...styles);

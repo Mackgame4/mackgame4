@@ -6,6 +6,7 @@ import {
 } from '@react-pdf/renderer';
 
 import { colorVars } from '../Utils';
+import { Config } from '../Config';
 
 const styles = StyleSheet.create({
     title: {
@@ -60,17 +61,17 @@ const styles = StyleSheet.create({
 const DocHeader = () => (
     <View style={styles.header}>
         <View style={styles.leftContainer}>
-            <Text style={[styles.title, { fontFamily: 'CaviarDreams-Regular', color: colorVars.textColor}]}>Fabio</Text>
-            <Text style={[styles.title, { color: colorVars.primaryColor}]}>Magalhas</Text>
+            <Text style={[styles.title, { fontFamily: 'CaviarDreams-Regular', color: colorVars.textColor}]}>{Config.firstName}</Text>
+            <Text style={[styles.title, { color: colorVars.primaryColor}]}>{Config.lastName}</Text>
             <View style={{ flexDirection: 'row' }}>
-                <Text style={styles.badge}>Software Engineer</Text>
-                <Text style={styles.badge}>Fullstack Developer</Text>
-                <Text style={styles.badge}>Student</Text>
+                {Config.badges.map((badge, index) => (
+                    <Text key={index} style={styles.badge}>{badge}</Text>
+                ))}
             </View>
         </View>
         <View style={styles.rightContainer}>
             <View style={styles.avatarContainer}>
-                <Image style={styles.avatarImage} src="https://thumbs.dreamstime.com/b/homem-cinzento-do-placeholder-da-foto-pessoa-gen%C3%A9rica-silhueta-cinzenta-em-um-fundo-branco-144511705.jpg" />
+                <Image style={styles.avatarImage} src={Config.imageURL} />
             </View>
         </View>
     </View>
