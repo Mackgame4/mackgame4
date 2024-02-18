@@ -18,13 +18,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 45,
     backgroundColor: colorVars.backgroudColor,
   },
-  title: {
-    fontSize: 18,
-    fontFamily: 'JetBrainsMono-Bold',
-    fontWeight: 'bold',
-    color: colorVars.primaryColor,
-    letterSpacing: 2,
-  },
   content: {
     flex: 1,
     flexDirection: 'row',
@@ -38,7 +31,20 @@ const styles = StyleSheet.create({
   rightContainer: {
     width: '50%',
     alignItems: 'flex-end',
-  }
+  },
+  title: {
+    fontSize: 18,
+    fontFamily: 'JetBrainsMono-Bold',
+    fontWeight: 'bold',
+    color: colorVars.primaryColor,
+    letterSpacing: 2,
+  },
+  text: {
+    fontSize: 12,
+    fontFamily: 'JetBrainsMono-Regular',
+    color: colorVars.textColor,
+    letterSpacing: 1,
+  },
 });
 
 const Doc = () => (
@@ -50,8 +56,18 @@ const Doc = () => (
         </View>
         <View style={styles.rightContainer}>
           <Text style={styles.title}>Contacto</Text>
-          <PdfIcon height={16} name="phoneIcon" color={colorVars.primaryColor} isOutlined />
-          <Text>910 000 000</Text>
+          <View style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+            <PdfIcon height={11} name="phoneIcon" color={colorVars.primaryColor} isOutlined />
+            <Text style={[styles.text, { marginLeft: 7 }]}>910 000 000</Text>
+          </View>
+          <View style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+            <PdfIcon height={11} name="emailIcon" color={colorVars.primaryColor} isOutlined />
+            <Text style={[styles.text, { marginLeft: 7 }]}>email@gmail.com</Text>
+          </View>
+          <View style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+            <PdfIcon height={11} name="githubIcon" color={colorVars.primaryColor} isOutlined />
+            <Text style={[styles.text, { marginLeft: 7 }]}>github.com</Text>
+          </View>
         </View>
       </View>
     </Page>
