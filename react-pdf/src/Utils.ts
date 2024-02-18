@@ -114,8 +114,17 @@ export function getTheme(theme: string) {
     return themes[themeName][mode];
 }
 
-import { Config } from './Config';
+import { Config, locales } from './Config';
+
 export const colorVars = getTheme(Config.defaultTheme);
+
+export function getLocale() {
+    return locales[Config.defaultLocale];
+}
+
+export function ln(key: string) {
+    return getLocale()[key];
+}
 
 /*export function mergeStyles(...styles: unknown[]) {
     return Object.assign({}, ...styles);

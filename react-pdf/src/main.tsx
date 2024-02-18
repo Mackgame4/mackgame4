@@ -5,6 +5,10 @@ import { PDFViewer, PDFDownloadLink } from '@react-pdf/renderer'
 import Document from './Document.tsx'
 import './index.css'
 
+import { colorVars } from './Utils'
+const root = document.documentElement
+root.style.setProperty('--primary-color', colorVars.primaryColor)
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>

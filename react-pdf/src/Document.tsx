@@ -2,13 +2,12 @@ import {
   Document,
   View,
   Text,
-  //Image,
   Link,
   Page,
   StyleSheet,
 } from '@react-pdf/renderer';
 
-import { colorVars } from './Utils';
+import { colorVars, ln } from './Utils';
 import { Config } from './Config';
 
 import DocHeader from './components/docHeader';
@@ -65,7 +64,7 @@ const Doc = () => (
         <View style={styles.leftContainer}>
         </View>
         <View style={styles.rightContainer}>
-          <Text style={styles.title}>CONTACTOS</Text>
+          <Text style={styles.title}>{ln('contact')}</Text>
           <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 7 }}>
             <PdfIcon height={12} name="phoneIcon" color={colorVars.primaryColor} isOutlined />
             <Text style={[styles.text, { marginLeft: 5, letterSpacing: 0.5 }]}>{Config.phoneNumber}</Text>
