@@ -129,11 +129,15 @@ const Doc = () => (
           <Text style={styles.title}>{ln('contact')}</Text>
           <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 5 }}>
             <PdfIcon height={12} name="phoneIcon" color={colorVars.primaryColor} isOutlined />
-            <Text style={[styles.text, { marginLeft: 5, letterSpacing: 0.5 }]}>{Config.phoneNumber}</Text>
+            <Link style={[styles.link, { marginLeft: 5, letterSpacing: 0.5 }]}
+              src={`tel:${Config.phoneNumber}`}
+            >{Config.phoneNumber}</Link>
           </View>
           <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 2 }}>
             <PdfIcon height={12} name="emailIcon" color={colorVars.primaryColor} isOutlined />
-            <Text style={[styles.link, { marginLeft: 5 }]}>{Config.email}</Text>
+            <Link style={[styles.link, { marginLeft: 5 }]}
+              src={`mailto:${Config.email}`}
+            >{Config.email}</Link>
           </View>
           <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 2 }}>
             <PdfIcon height={12} name="githubIcon" color={colorVars.primaryColor} isOutlined />
