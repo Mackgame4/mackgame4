@@ -56,6 +56,14 @@ const styles = StyleSheet.create({
     letterSpacing: 1,
     textDecoration: 'underline',
   },
+  skillText: {
+    fontSize: 9,
+    fontFamily: 'JetBrainsMono-Regular',
+    color: colorVars.textColor,
+    letterSpacing: 0.5,
+    textDecoration: 'none',
+    marginTop: 5
+  },
 });
 
 const Doc = () => (
@@ -86,7 +94,22 @@ const Doc = () => (
           </View>
           {/** Skills Section */}
           <Text style={[styles.title, { marginTop: 20 }]}>SKILLS</Text>
-          <PdfProgBar value={100} width={100} height={4} isOutlined />
+          <Text style={styles.skillText}>JavaScript/TypeScript</Text>
+          <PdfProgBar value={100} width={150} height={4} isOutlined />
+          <Text style={styles.skillText}>React/Vue/AstroJS</Text>
+          <PdfProgBar value={90} width={150} height={4} isOutlined />
+          <Text style={styles.skillText}>C/Lua</Text>
+          <PdfProgBar value={95} width={150} height={4} isOutlined />
+          <Text style={styles.skillText}>Python/Haskell</Text>
+          <PdfProgBar value={80} width={150} height={4} isOutlined />
+          <Text style={styles.skillText}>HTML/CSS</Text>
+          <PdfProgBar value={100} width={150} height={4} isOutlined />
+          <Text style={styles.skillText}>Git/Batch</Text>
+          <PdfProgBar value={70} width={150} height={4} isOutlined />
+          <Text style={styles.skillText}>Java</Text>
+          <PdfProgBar value={95} width={150} height={4} isOutlined />
+          <Text style={styles.skillText}>MySQL/MongoDB</Text>
+          <PdfProgBar value={100} width={150} height={4} isOutlined />
           {/** Tools Section */}
           <Text style={[styles.title, { marginTop: 20 }]}>TOOLS</Text>
           {/** Education Section */}
