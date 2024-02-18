@@ -97,14 +97,16 @@ export const themes = {
             secondaryColor: '#33362F',
             accentColor: '#A2A498',
             textColor: '#2B312E',
+            textForegroundColor: '#ffffff',
             backgroudColor: '#FDFDF5'
         },
         dark: {
-            primaryColor: '#017E05',
-            secondaryColor: '#33362F',
+            primaryColor: '#00f708',
+            secondaryColor: '#c1ccb3',
             accentColor: '#A2A498',
-            textColor: '#2B312E',
-            backgroudColor: '#FDFDF5'
+            textColor: '#dcf1e7',
+            textForegroundColor: '#000000',
+            backgroudColor: '#141414'
         },
     },
 };

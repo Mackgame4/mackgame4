@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     },
     badge: {
         backgroundColor: colorVars.textColor,
-        color: 'white',
+        color: colorVars.textForegroundColor,
         padding: 5,
         borderRadius: 5,
         fontSize: 10,
