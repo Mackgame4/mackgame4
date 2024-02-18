@@ -3,6 +3,7 @@ import {
   View,
   Text,
   //Image,
+  Link,
   Page,
   StyleSheet,
 } from '@react-pdf/renderer';
@@ -40,10 +41,18 @@ const styles = StyleSheet.create({
     letterSpacing: 2,
   },
   text: {
-    fontSize: 12,
+    fontSize: 10,
     fontFamily: 'JetBrainsMono-Regular',
     color: colorVars.textColor,
     letterSpacing: 1,
+    textDecoration: 'none',
+  },
+  link: {
+    fontSize: 10,
+    fontFamily: 'JetBrainsMono-Regular',
+    color: colorVars.textColor,
+    letterSpacing: 1,
+    textDecoration: 'underline',
   },
 });
 
@@ -55,18 +64,22 @@ const Doc = () => (
         <View style={styles.leftContainer}>
         </View>
         <View style={styles.rightContainer}>
-          <Text style={styles.title}>Contacto</Text>
-          <View style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-            <PdfIcon height={11} name="phoneIcon" color={colorVars.primaryColor} isOutlined />
-            <Text style={[styles.text, { marginLeft: 7 }]}>910 000 000</Text>
+          <Text style={styles.title}>CONTACTO</Text>
+          <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 7 }}>
+            <PdfIcon height={12} name="phoneIcon" color={colorVars.primaryColor} isOutlined />
+            <Text style={[styles.text, { marginLeft: 5, letterSpacing: 0.5 }]}>(+351) 910 000 000</Text>
           </View>
-          <View style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-            <PdfIcon height={11} name="emailIcon" color={colorVars.primaryColor} isOutlined />
-            <Text style={[styles.text, { marginLeft: 7 }]}>email@gmail.com</Text>
+          <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 2 }}>
+            <PdfIcon height={12} name="emailIcon" color={colorVars.primaryColor} isOutlined />
+            <Text style={[styles.link, { marginLeft: 5 }]}>email@gmail.com</Text>
           </View>
-          <View style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-            <PdfIcon height={11} name="githubIcon" color={colorVars.primaryColor} isOutlined />
-            <Text style={[styles.text, { marginLeft: 7 }]}>github.com</Text>
+          <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 2 }}>
+            <PdfIcon height={12} name="githubIcon" color={colorVars.primaryColor} isOutlined />
+            <Link style={[styles.link, { marginLeft: 5 }]} src="http://github.com/Mackgame4">@Mackgame4</Link>
+          </View>
+          <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 2 }}>
+            <PdfIcon height={12} name="linkedInIcon" color={colorVars.primaryColor} isOutlined />
+            <Link style={[styles.link, { marginLeft: 5 }]} src="http://linkedin.com/in/mackgame4">@mackgame4</Link>
           </View>
         </View>
       </View>
