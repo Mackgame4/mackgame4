@@ -11,7 +11,9 @@ import { colorVars, ln } from './Utils';
 import { Config } from './Config';
 
 import DocHeader from './components/docHeader';
+
 import PdfIcon from './components/pdfIcons';
+import PdfProgBar from './components/pdfProgBar';
 
 const styles = StyleSheet.create({
   body: {
@@ -64,6 +66,7 @@ const Doc = () => (
         <View style={styles.leftContainer}>
         </View>
         <View style={styles.rightContainer}>
+          {/** Contacts Section */}
           <Text style={styles.title}>{ln('contact')}</Text>
           <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 7 }}>
             <PdfIcon height={12} name="phoneIcon" color={colorVars.primaryColor} isOutlined />
@@ -81,6 +84,13 @@ const Doc = () => (
             <PdfIcon height={12} name="linkedInIcon" color={colorVars.primaryColor} isOutlined />
             <Link style={[styles.link, { marginLeft: 5 }]} src={Config.linkedInLink}>@{Config.linkedInUsername}</Link>
           </View>
+          {/** Skills Section */}
+          <Text style={[styles.title, { marginTop: 20 }]}>SKILLS</Text>
+          <PdfProgBar value={100} width={100} height={4} isOutlined />
+          {/** Tools Section */}
+          <Text style={[styles.title, { marginTop: 20 }]}>TOOLS</Text>
+          {/** Education Section */}
+          <Text style={[styles.title, { marginTop: 20 }]}>EDUCATION</Text>
         </View>
       </View>
     </Page>

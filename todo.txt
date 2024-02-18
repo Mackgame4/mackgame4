@@ -1,0 +1,7 @@
+skills section
+tools section
+education section
+experience section / projects section
+languages section
+interests section
+footer section

@@ -1,6 +1,6 @@
 export const Config = {
     defaultTheme: 'green-light',
-    defaultLocale: 'pt',
+    defaultLocale: 'en',
 
     firstName: 'Fabio',
     lastName: 'Magalhas',
