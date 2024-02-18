@@ -11,10 +11,5 @@ export default defineConfig({
   },
   optimizeDeps: {
     include: ['@react-pdf/renderer'],
-  },
-  build: {
-    rollupOptions: {
-      external: ['react', 'react-dom'],
-    },
   }
 })

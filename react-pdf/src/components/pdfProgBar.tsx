@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     },
 });
 
-const PdfProgBar = ({ value, width, height, isRounded, isOutlined }) => (
+const PdfProgBar = ({ value, width, height, isRounded, isOutlined }: { value: number, width?: number, height?: number, isRounded?: boolean, isOutlined: boolean }) => (
     <View style={[styles.progBarContainer, { width, height, borderRadius: isRounded ? '50%' : 0, border: isOutlined ? `1px solid ${colorVars.primaryColor}` : 'none' }]}>
         <View style={[styles.progBar, { width: `${value}%`, borderRadius: isRounded ? '50%' : 0 }]} />
     </View>

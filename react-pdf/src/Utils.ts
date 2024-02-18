@@ -95,7 +95,7 @@ export const themes = {
         light: {
             primaryColor: '#017E05',
             secondaryColor: '#33362F',
-            accentColor: '#6d6e67',
+            accentColor: '#797a71',
             textColor: '#2B312E',
             textForegroundColor: '#ffffff',
             backgroudColor: '#FDFDF5'
@@ -113,7 +113,8 @@ export const themes = {
 
 export function getTheme(theme: string) {
     const [themeName, mode] = theme.split('-');
-    return themes[themeName][mode];
+    const selectedTheme = themes[themeName as keyof typeof themes];
+    return selectedTheme[mode as keyof typeof selectedTheme];
 }
 
 import { Config, locales } from './Config';
@@ -121,11 +122,12 @@ import { Config, locales } from './Config';
 export const colorVars = getTheme(Config.defaultTheme);
 
 export function getLocale() {
-    return locales[Config.defaultLocale];
+    return locales[Config.defaultLocale as keyof typeof locales];
 }
 
 export function ln(key: string) {
-    return getLocale()[key];
+    const locale = getLocale();
+    return locale[key as keyof typeof locale] || key;
 }
 
 /*export function mergeStyles(...styles: unknown[]) {

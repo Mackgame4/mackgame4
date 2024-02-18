@@ -95,18 +95,18 @@ const Doc = () => (
             <View key={index} style={{ marginTop: 5, textAlign: 'left', alignItems: 'flex-start' }}>
               <Link src={job.src} style={{ textDecoration: 'none' }}>
                 <Text style={styles.footerText}>{job.date}</Text>
-                {!job.date && <View style={{ marginTop: 7 }} />}
+                {!job.date ? <View style={{ marginTop: 7 }} /> : null}
                 <Text style={styles.text}>{job.title}</Text>
                 <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-                  {job.company && <>
+                  {job.company ? <>
                   <Text style={styles.footerText}>{job.company} - {job.location}</Text>
                   <PdfIcon height={7} name="externalLinkIcon" color={colorVars.primaryColor} isOutlined />
-                  </>}
+                  </> : null}
                 </View>
               </Link>
-              {job.description &&
+              {job.description ?
               <Text style={[styles.footerText, { marginTop: 10 }]}>{job.description}</Text>
-              }
+              : null}
             </View>
           ))}
           {/** Education Section */}
