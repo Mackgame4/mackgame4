@@ -88,17 +88,20 @@ const Doc = () => (
       <View style={styles.content}>
         <View style={styles.leftContainer}>
           {/** Summarize Section */}
-          <Text style={styles.text}>{Config.summarize}</Text>
+          <Text style={styles.text}>Hi, i'm {Config.firstName} {Config.lastName}. {Config.summarize}</Text>
           {/** WorkExperience Section */}
           <Text style={[styles.title, { marginTop: 20 }]}>WORK EXPERIENCE</Text>
           {Config.experience.map((job, index) => (
             <View key={index} style={{ marginTop: 5, textAlign: 'left', alignItems: 'flex-start' }}>
               <Link src={job.src} style={{ textDecoration: 'none' }}>
                 <Text style={styles.footerText}>{job.date}</Text>
+                {!job.date && <View style={{ marginTop: 7 }} />}
                 <Text style={styles.text}>{job.title}</Text>
                 <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                  {job.company && <>
                   <Text style={styles.footerText}>{job.company} - {job.location}</Text>
                   <PdfIcon height={7} name="externalLinkIcon" color={colorVars.primaryColor} isOutlined />
+                  </>}
                 </View>
               </Link>
               {job.description &&
@@ -135,7 +138,7 @@ const Doc = () => (
           </View>
           <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 2 }}>
             <PdfIcon height={12} name="emailIcon" color={colorVars.primaryColor} isOutlined />
-            <Link style={[styles.link, { marginLeft: 5 }]}
+            <Link style={[styles.link, { marginLeft: 5, letterSpacing: 0.5 }]}
               src={`mailto:${Config.email}`}
             >{Config.email}</Link>
           </View>
@@ -157,7 +160,7 @@ const Doc = () => (
           {Config.tools.map((tool, index) => (
             <View key={index} style={{ textAlign: 'right', alignItems: 'flex-end' }}>
               <Text style={styles.progbarText}>{tool.name}</Text>
-              <PdfProgBar value={tool.level} width={150} height={4} isOutlined />
+              <PdfProgBar value={tool.level} width={150} height={4} isOutlined isRounded={false} />
             </View>
           ))}
           {/** Languages Section */}

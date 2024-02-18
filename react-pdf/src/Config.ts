@@ -2,17 +2,17 @@ export const Config = {
     defaultTheme: 'green-light',
     defaultLocale: 'en',
 
-    firstName: 'Fabio',
-    lastName: 'Magalhas',
-    imageURL: 'https://thumbs.dreamstime.com/b/homem-cinzento-do-placeholder-da-foto-pessoa-gen%C3%A9rica-silhueta-cinzenta-em-um-fundo-branco-144511705.jpg',
+    firstName: 'Fábio',
+    lastName: 'Magalhães',
+    imageURL: 'https://media.licdn.com/dms/image/D4E03AQHr208rFuXqtQ/profile-displayphoto-shrink_800_800/0/1686155019867?e=1714003200&v=beta&t=63TPqMh12mwOW6DWRYW4tbuH1U5aPSmk9kc0uWjviJ0',
     badges: ['Software Engineer', 'Full Stack Developer', 'Student'],
 
-    phoneNumber: '+351 910 000 000',
-    email: 'email@gmail.com',
+    phoneNumber: '+351 927 728 801',
+    email: 'fabiomagalhaes454@hotmail.com',
     githubUsername: 'Mackgame4',
     githuLink: 'http://github.com/Mackgame4',
-    linkedInUsername: 'mackgame4',
-    linkedInLink: 'http://linkedin.com/in/mackgame4',
+    linkedInUsername: 'fabiomagalhaes104365',
+    linkedInLink: 'https://www.linkedin.com/in/fabiomagalhaes104365',
 
     languages: [ // Levels: Native, Fluent, Proficient, Intermediate, Basic
         {
@@ -83,16 +83,24 @@ export const Config = {
         }
     ],
 
-    summarize: 'I am a software engineer with a passion for developing and designing software. I am currently studying Computer Science at the University of Minho, where I am learning about the fundamentals of computer science, algorithms, data structures, and software engineering. I am also a full stack developer with experience in web development, mobile development, and game development.',
+    summarize: 'I am a software engineer with a passion for developing and designing software. I am currently studying "Informatic Engineering", IT, at the University of Minho, where I am learning about the fundamentals of computers, algorithms, data science, and software engineering. I am also a full stack developer with experience as freelance in web development and mobile development.',
 
     experience: [
         {
-            src: 'https://www.uminho.pt/',
-            title: 'Software Engineer Intern',
-            date: '2022 - 2024',
-            company: 'University of Minho',
+            src: 'https://cecri-blog.vercel.app/',
+            title: 'Web Developer',
+            date: 'Freelance',
+            company: 'Centro de Estudos de Relações Internacionais (CECRI)',
             location: 'Braga, Portugal',
-            description: 'Currently studying Computer Science at the University of Coimbra. I am learning about the fundamentals of computer science, algorithms, data structures, and software engineering.'
+            description: '[Worked as a freelance web developer for the CECRI - UMINHO, where I developed a blog for the organization. The blog was developed using AstroJS and used Github as CMS and deployed on Vercel, aiming for minimum costs of maintenance. The blog is used to share articles and news about international relations and politics. The blog is also used to share information about the organization and its members, and help students and researchers to find information and support during their studies and research.]'
+        },
+        {
+            src: '',
+            title: 'And gladly looking forward to new opportunities and experiences :)',
+            date: '',
+            company: '',
+            location: '',
+            description: ''
         }
     ],
 
@@ -103,7 +111,7 @@ export const Config = {
             date: '2022 - 2024',
             institution: 'University of Minho',
             location: 'Braga, Portugal',
-            description: 'Currently studying Computer Science at the University of Coimbra. I am learning about the fundamentals of computer science, algorithms, data structures, and software engineering.'
+            description: 'Currently studying Computer Science & Software Engineering at the University of Minho. I am learning about the fundamentals of computer science, algorithms, data structures, data analysis, computer architecture, hardware, and software engineering.'
         }
     ]
 };

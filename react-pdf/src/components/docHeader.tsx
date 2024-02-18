@@ -33,12 +33,12 @@ const styles = StyleSheet.create({
         paddingHorizontal: 10,
     },
     leftContainer: {
-        width: '50%',
+        width: '55%',
         justifyContent: 'flex-start',
         alignItems: 'flex-start',
     },
     rightContainer: {
-        width: '50%',
+        width: '45%',
         justifyContent: 'flex-end',
         alignItems: 'flex-end',
     },

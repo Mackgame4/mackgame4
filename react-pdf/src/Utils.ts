@@ -95,7 +95,7 @@ export const themes = {
         light: {
             primaryColor: '#017E05',
             secondaryColor: '#33362F',
-            accentColor: '#A2A498',
+            accentColor: '#6d6e67',
             textColor: '#2B312E',
             textForegroundColor: '#ffffff',
             backgroudColor: '#FDFDF5'
