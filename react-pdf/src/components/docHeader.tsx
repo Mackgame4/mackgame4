@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
         padding: 5,
         borderRadius: 5,
         fontSize: 10,
-        fontFamily: 'Inter-Regular',
+        fontFamily: 'JetBrainsMono-Regular',
         margin: 3,
     },
     header: {

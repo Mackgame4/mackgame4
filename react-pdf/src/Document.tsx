@@ -1,7 +1,7 @@
 import {
   Document,
   View,
-  //Text,
+  Text,
   //Image,
   Page,
   StyleSheet,
@@ -10,6 +10,7 @@ import {
 import { colorVars } from './Utils';
 
 import DocHeader from './components/docHeader';
+import PdfIcon from './components/pdfIcons';
 
 const styles = StyleSheet.create({
   body: {
@@ -18,55 +19,26 @@ const styles = StyleSheet.create({
     backgroundColor: colorVars.backgroudColor,
   },
   title: {
-    fontSize: 45,
-    textAlign: 'left',
-    fontFamily: 'CaviarDreams-Bold',
+    fontSize: 18,
+    fontFamily: 'JetBrainsMono-Bold',
     fontWeight: 'bold',
-  },
-  text: {
-    margin: 12,
-    fontSize: 14,
-    textAlign: 'justify',
-    fontFamily: 'Times-Roman',
-  },
-  // Containers
-  header: {
-    width: '100%',
-    height: 210,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
+    color: colorVars.primaryColor,
+    letterSpacing: 2,
   },
   content: {
     flex: 1,
-    flexDirection: 'row'
+    flexDirection: 'row',
+    paddingHorizontal: 15
   },
   leftContainer: {
     backgroundColor: colorVars.accentColor,
     width: '50%',
-    justifyContent: 'flex-start',
     alignItems: 'flex-start',
   },
   rightContainer: {
-    backgroundColor: colorVars.primaryColor,
     width: '50%',
-    justifyContent: 'flex-end',
     alignItems: 'flex-end',
-  },
-  avatarContainer: {
-    width: 160,
-    height: 160,
-    borderRadius: '50%',
-    overflow: 'hidden',
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: colorVars.primaryColor,
-  },
-  avatarImage: {
-    width: 158,
-    height: 158,
-    borderRadius: '50%',
-  },
+  }
 });
 
 const Doc = () => (
@@ -77,6 +49,9 @@ const Doc = () => (
         <View style={styles.leftContainer}>
         </View>
         <View style={styles.rightContainer}>
+          <Text style={styles.title}>Contacto</Text>
+          <PdfIcon height={16} name="phoneIcon" color={colorVars.primaryColor} isOutlined />
+          <Text>910 000 000</Text>
         </View>
       </View>
     </Page>

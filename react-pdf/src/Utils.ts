@@ -50,6 +50,46 @@ Font.register({
     src: '/fonts/ostrich-regular.ttf'
 });
 
+Font.register({
+    family: 'JetBrainsMono-Light',
+    src: '/fonts/JetBrainsMono-Light.ttf'
+});
+
+Font.register({
+    family: 'JetBrainsMono-Regular',
+    src: '/fonts/JetBrainsMono-Medium.ttf'
+});
+
+Font.register({
+    family: 'JetBrainsMono-Bold',
+    src: '/fonts/JetBrainsMono-Bold.ttf'
+});
+
+Font.register({
+    family: 'JetBrainsMono-ExtraBold',
+    src: '/fonts/JetBrainsMono-ExtraBold.ttf'
+});
+
+Font.register({
+    family: 'JetBrainsMono-Italic',
+    src: '/fonts/JetBrainsMono-MediumItalic.ttf'
+});
+
+Font.register({
+    family: 'JetBrainsMono-BoldItalic',
+    src: '/fonts/JetBrainsMono-BoldItalic.ttf'
+});
+
+Font.register({
+    family: 'JetBrainsMono-ExtraBoldItalic',
+    src: '/fonts/JetBrainsMono-ExtraBoldItalic.ttf'
+});
+
+Font.register({
+    family: 'JetBrainsMono-LightItalic',
+    src: '/fonts/JetBrainsMono-LightItalic.ttf'
+});
+
 export const colorVars = {
     primaryColor: '#017E05',
     secondaryColor: '#33362F',
@@ -58,6 +98,6 @@ export const colorVars = {
     backgroudColor: '#FDFDF5'
 };
 
-export function mergeStyles(...styles: unknown[]) {
+/*export function mergeStyles(...styles: unknown[]) {
     return Object.assign({}, ...styles);
-}
+}*/
