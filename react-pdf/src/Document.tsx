@@ -2,6 +2,7 @@ import {
   Document,
   View,
   Text,
+  Image,
   Link,
   Page,
   StyleSheet,
@@ -27,7 +28,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15
   },
   leftContainer: {
-    backgroundColor: colorVars.accentColor,
     width: '50%',
     alignItems: 'flex-start',
   },
@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
     marginTop: 5
   },
   footerText: {
-    fontSize: 7,
+    fontSize: 8,
     fontFamily: 'JetBrainsMono-Regular',
     color: colorVars.accentColor,
     letterSpacing: 1,
@@ -88,6 +88,17 @@ const Doc = () => (
       <DocHeader />
       <View style={styles.content}>
         <View style={styles.leftContainer}>
+          {/** WorkExperience Section */}
+          <Text style={styles.title}>WORK EXPERIENCE</Text>
+          {/** Education Section */}
+          <Text style={[styles.title, { marginTop: 20 }]}>EDUCATION</Text>
+          {Config.education.map((edu, index) => (
+            <View key={index} style={{ marginTop: 5, textAlign: 'left', alignItems: 'flex-start' }}>
+              <Text style={styles.footerText}>{edu.date}</Text>
+              <Text style={styles.text}>{edu.title}</Text>
+              <Text style={styles.footerText}>{edu.institution} - {edu.location}</Text>
+            </View>
+          ))}
         </View>
         <View style={styles.rightContainer}>
           {/** Contacts Section */}
@@ -121,13 +132,15 @@ const Doc = () => (
               <PdfProgBar value={tool.level} width={150} height={4} isOutlined />
             </View>
           ))}
-          {/** Education Section */}
-          <Text style={[styles.title, { marginTop: 20 }]}>EDUCATION</Text>
-          {Config.education.map((edu, index) => (
+          {/** Languages Section */}
+          <Text style={[styles.title, { marginTop: 20 }]}>LANGUAGES</Text>
+          {Config.languages.map((lang, index) => (
             <View key={index} style={{ marginTop: 5, textAlign: 'right', alignItems: 'flex-end' }}>
-              <Text style={styles.footerText}>{edu.date}</Text>
-              <Text style={styles.text}>{edu.title}</Text>
-              <Text style={styles.footerText}>{edu.institution} - {edu.location}</Text>
+              <Text style={styles.text}>{lang.name}</Text>
+              <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
+                <Image src={lang.flag} style={{ width: 'auto', height: 8, marginRight: 7 }} />
+                <Text style={styles.footerText}>- {lang.level}</Text>
+              </View>
             </View>
           ))}
         </View>

@@ -14,6 +14,19 @@ export const Config = {
     linkedInUsername: 'mackgame4',
     linkedInLink: 'http://linkedin.com/in/mackgame4',
 
+    languages: [ // Levels: Native, Fluent, Proficient, Intermediate, Basic
+        {
+            name: 'Portuguese',
+            level: 'Native',
+            flag: '/icons/pt-flag.png'
+        },
+        {
+            name: 'English',
+            level: 'Fluent',
+            flag: '/icons/us-flag.png'
+        }
+    ],
+
     skills: [
         'Trouble Shooting',
         'Problem Solving',
@@ -29,7 +42,7 @@ export const Config = {
             level: 100
         },
         {
-            name: 'React/Vue/AstroJS',
+            name: 'React/Vue/Svelte/Astro',
             level: 90
         },
         {
