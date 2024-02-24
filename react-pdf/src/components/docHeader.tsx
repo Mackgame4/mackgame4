@@ -5,7 +5,7 @@ import {
     StyleSheet,
 } from '@react-pdf/renderer';
 
-import { colorVars } from '../Utils';
+import { colorVars, getLocale } from '../Utils';
 import { Config } from '../Config';
 
 const styles = StyleSheet.create({
@@ -64,7 +64,7 @@ const DocHeader = () => (
             <Text style={[styles.title, { fontFamily: 'CaviarDreams-Regular', color: colorVars.textColor}]}>{Config.firstName}</Text>
             <Text style={[styles.title, { color: colorVars.primaryColor}]}>{Config.lastName}</Text>
             <View style={{ flexDirection: 'row' }}>
-                {Config.badges.map((badge, index) => (
+                {getLocale().badges.map((badge, index) => (
                     <Text key={index} style={styles.badge}>{badge}</Text>
                 ))}
             </View>

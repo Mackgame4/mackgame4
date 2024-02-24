@@ -8,7 +8,7 @@ import {
   StyleSheet,
 } from '@react-pdf/renderer';
 
-import { colorVars, ln } from './Utils';
+import { colorVars, ln, getLocale } from './Utils';
 import { Config } from './Config';
 
 import DocHeader from './components/docHeader';
@@ -88,10 +88,10 @@ const Doc = () => (
       <View style={styles.content}>
         <View style={styles.leftContainer}>
           {/** Summarize Section */}
-          <Text style={styles.text}>Hi, i'm {Config.firstName} {Config.lastName}. {Config.summarize}</Text>
+          <Text style={styles.text}>Hi, i'm {Config.firstName}{Config.userName ? ` (${Config.userName}) ` : ' '}{Config.lastName}. {getLocale().summarize}</Text>
           {/** WorkExperience Section */}
           <Text style={[styles.title, { marginTop: 20 }]}>WORK EXPERIENCE</Text>
-          {Config.experience.map((job, index) => (
+          {getLocale().experience.map((job, index) => (
             <View key={index} style={{ marginTop: 5, textAlign: 'left', alignItems: 'flex-start' }}>
               <Link src={job.src} style={{ textDecoration: 'none' }}>
                 <Text style={styles.footerText}>{job.date}</Text>
@@ -111,7 +111,7 @@ const Doc = () => (
           ))}
           {/** Education Section */}
           <Text style={[styles.title, { marginTop: 20 }]}>EDUCATION</Text>
-          {Config.education.map((edu, index) => (
+          {getLocale().education.map((edu, index) => (
             <View key={index} style={{ marginTop: 5, textAlign: 'left', alignItems: 'flex-start' }}>
               <Link src={edu.src} style={{ textDecoration: 'none' }}>
                 <Text style={styles.footerText}>{edu.date}</Text>
@@ -129,7 +129,7 @@ const Doc = () => (
         </View>
         <View style={styles.rightContainer}>
           {/** Contacts Section */}
-          <Text style={styles.title}>{ln('contact')}</Text>
+          <Text style={styles.title}>{ln('contacts')}</Text>
           <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 5 }}>
             <PdfIcon height={12} name="phoneIcon" color={colorVars.primaryColor} isOutlined />
             <Link style={[styles.link, { marginLeft: 5, letterSpacing: 0.5 }]}
@@ -152,7 +152,7 @@ const Doc = () => (
           </View>
           {/** Skills Section */}
           <Text style={[styles.title, { marginTop: 20 }]}>SKILLS</Text>
-          {Config.skills.map((skill, index) => (
+          {getLocale().skills.map((skill, index) => (
             <Text key={index} style={styles.skillText}>{skill}</Text>
           ))}
           {/** Tools Section */}
@@ -165,7 +165,7 @@ const Doc = () => (
           ))}
           {/** Languages Section */}
           <Text style={[styles.title, { marginTop: 20 }]}>LANGUAGES</Text>
-          {Config.languages.map((lang, index) => (
+          {getLocale().languages.map((lang, index) => (
             <View key={index} style={{ marginTop: 5, textAlign: 'right', alignItems: 'flex-end' }}>
               <Text style={styles.text}>{lang.name}</Text>
               <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>

@@ -117,17 +117,17 @@ export function getTheme(theme: string) {
     return selectedTheme[mode as keyof typeof selectedTheme];
 }
 
-import { Config, locales } from './Config';
+import { Config, Locales } from './Config';
 
 export const colorVars = getTheme(Config.defaultTheme);
 
 export function getLocale() {
-    return locales[Config.defaultLocale as keyof typeof locales];
+    return Locales[Config.defaultLocale as keyof typeof Locales];
 }
 
 export function ln(key: string) {
     const locale = getLocale();
-    return locale[key as keyof typeof locale] || key;
+    return locale[key as keyof typeof locale] as string || key as string;
 }
 
 /*export function mergeStyles(...styles: unknown[]) {
