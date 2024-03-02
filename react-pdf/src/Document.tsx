@@ -88,9 +88,9 @@ const Doc = () => (
       <View style={styles.content}>
         <View style={styles.leftContainer}>
           {/** Summarize Section */}
-          <Text style={styles.text}>Hi, i'm {Config.firstName}{Config.userName ? ` (${Config.userName}) ` : ' '}{Config.lastName}. {getLocale().summarize}</Text>
+          <Text style={styles.text}>{ln('hello')} {Config.firstName}{Config.userName ? ` (${Config.userName}) ` : ' '}{Config.lastName}. {getLocale().summarize}</Text>
           {/** WorkExperience Section */}
-          <Text style={[styles.title, { marginTop: 20 }]}>WORK EXPERIENCE</Text>
+          <Text style={[styles.title, { marginTop: 20 }]}>{ln('experienceText')}</Text>
           {getLocale().experience.map((job, index) => (
             <View key={index} style={{ marginTop: 5, textAlign: 'left', alignItems: 'flex-start' }}>
               <Link src={job.src} style={{ textDecoration: 'none' }}>
@@ -110,7 +110,7 @@ const Doc = () => (
             </View>
           ))}
           {/** Education Section */}
-          <Text style={[styles.title, { marginTop: 20 }]}>EDUCATION</Text>
+          <Text style={[styles.title, { marginTop: 20 }]}>{ln('educationText')}</Text>
           {getLocale().education.map((edu, index) => (
             <View key={index} style={{ marginTop: 5, textAlign: 'left', alignItems: 'flex-start' }}>
               <Link src={edu.src} style={{ textDecoration: 'none' }}>
@@ -151,12 +151,12 @@ const Doc = () => (
             <Link style={[styles.link, { marginLeft: 5 }]} src={Config.linkedInLink}>@{Config.linkedInUsername}</Link>
           </View>
           {/** Skills Section */}
-          <Text style={[styles.title, { marginTop: 20 }]}>SKILLS</Text>
+          <Text style={[styles.title, { marginTop: 20 }]}>{ln('skillsText')}</Text>
           {getLocale().skills.map((skill, index) => (
             <Text key={index} style={styles.skillText}>{skill}</Text>
           ))}
           {/** Tools Section */}
-          <Text style={[styles.title, { marginTop: 20 }]}>TOOLS</Text>
+          <Text style={[styles.title, { marginTop: 20 }]}>{ln('toolsText')}</Text>
           {Config.tools.map((tool, index) => (
             <View key={index} style={{ textAlign: 'right', alignItems: 'flex-end' }}>
               <Text style={styles.progbarText}>{tool.name}</Text>
@@ -164,7 +164,7 @@ const Doc = () => (
             </View>
           ))}
           {/** Languages Section */}
-          <Text style={[styles.title, { marginTop: 20 }]}>LANGUAGES</Text>
+          <Text style={[styles.title, { marginTop: 20 }]}>{ln('languagesText')}</Text>
           {getLocale().languages.map((lang, index) => (
             <View key={index} style={{ marginTop: 5, textAlign: 'right', alignItems: 'flex-end' }}>
               <Text style={styles.text}>{lang.name}</Text>

@@ -1,6 +1,6 @@
 export const Config = {
     defaultTheme: 'green-light',
-    defaultLocale: 'en',
+    defaultLocale: 'pt',
 
     firstName: 'Fábio',
     lastName: 'Magalhães',
@@ -110,32 +110,38 @@ export const Locales = {
         ],
 
         /* Text Locales */
-        contacts: 'CONTACTS',
+        hello: "Hello, I'm",
+        contacts: "CONTACTS",
+        experienceText: "WORK EXPERIENCE",
+        educationText: "EDUCATION",
+        skillsText: "SKILLS",
+        toolsText: "TOOLS",
+        languagesText: "LANGUAGES",
     },
     pt: {
         /* Config */
-        badges: ['Software Engineer', 'Full Stack Developer', 'Student'],
+        badges: ['Engenheiro Software', 'Full Stack Dev', 'Estudante'],
 
-        summarize: 'I am a software engineer with a passion for developing and designing software. I am currently studying "Informatic Engineering", IT, at the University of Minho, where I am learning about the fundamentals of computers, algorithms, data science, and software engineering. I am also a full stack developer with experience as freelance in web development and mobile development.',
+        summarize: 'Sou um engenheiro de software com paixão por desenvolver e projetar software. Atualmente estou estudando "Engenharia Informática", na Universidade do Minho, onde estou aprendendo sobre os fundamentos de computadores, algoritmos, ciência de dados e engenharia de software. Também sou um desenvolvedor full stack com experiência como freelancer em desenvolvimento web e desenvolvimento mobile.',
 
         skills: [
-            'Trouble Shooting',
-            'Problem Solving',
-            'Team Work',
-            'Workflow Development',
-            'Computer/Hardware Skills',
-            'Adaptability/Creativity'
+            'Desenvolvimento de Software',
+            'Resolução de Problemas',
+            'Trabalho em Equipa',
+            'Fluxo de Trabalho',
+            'Conhecimentos s/Hardware',
+            'Adaptabilidade/Criatividade'
         ],
 
-        languages: [ // Levels: Native, Fluent, Proficient, Intermediate, Basic
+        languages: [
             {
-                name: 'Portuguese',
-                level: 'Native',
+                name: 'Português',
+                level: 'Nativo',
                 flag: '/icons/pt-flag.png'
             },
             {
-                name: 'English',
-                level: 'Fluent',
+                name: 'Inglês',
+                level: 'Fluente',
                 flag: '/icons/us-flag.png'
             }
         ],
@@ -171,6 +177,12 @@ export const Locales = {
         ],
 
         /* Text Locales */
-        contacts: 'CONTACTS',
+        hello: "Olá, eu sou",
+        contacts: "CONTATOS",
+        experienceText: "EXPERIÊNCIA",
+        educationText: "EDUCAÇÃO",
+        skillsText: "COMPETÊNCIAS",
+        toolsText: "FERRAMENTAS",
+        languagesText: "IDIOMAS",
     },
 };
