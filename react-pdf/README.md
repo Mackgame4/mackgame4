@@ -1,3 +1,15 @@
+# react-pdf
+
+## TODO
+- [ ] skills section
+- [ ] tools section
+- [ ] education section
+- [ ] experience section / projects section
+- [ ] languages section
+- [ ] interests section
+- [ ] footer section
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
