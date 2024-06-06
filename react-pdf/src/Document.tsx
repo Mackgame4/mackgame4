@@ -14,7 +14,6 @@ import { Config } from './Config';
 import DocHeader from './components/docHeader';
 
 import PdfIcon from './components/pdfIcons';
-import PdfProgBar from './components/pdfProgBar';
 
 const styles = StyleSheet.create({
   body: {
@@ -92,11 +91,11 @@ const Doc = () => (
           {/** WorkExperience Section */}
           <Text style={[styles.title, { marginTop: 20 }]}>{ln('experienceText')}</Text>
           {getLocale().experience.map((job, index) => (
-            <View key={index} style={{ marginTop: 5, textAlign: 'left', alignItems: 'flex-start' }}>
+            <View key={index} style={ index == 0 ? { marginTop: 5, textAlign: 'left', alignItems: 'flex-start' } : { marginTop: 15, textAlign: 'left', alignItems: 'flex-start' }}>
               <Link src={job.src} style={{ textDecoration: 'none' }}>
-                <Text style={styles.footerText}>{job.date}</Text>
+                <Text style={{ ...styles.footerText, ...(job.underlinedTitle ? { textDecoration: 'underline' } : {}) }}>{job.date}</Text>
                 {!job.date ? <View style={{ marginTop: 7 }} /> : null}
-                <Text style={styles.text}>{job.title}</Text>
+                <Text style={{ ...styles.text, ...(job.underlinedTitle ? { textDecoration: 'underline' } : {}) }}>{job.title}</Text>
                 <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                   {job.company ? <>
                   <Text style={styles.footerText}>{job.company} - {job.location}</Text>
@@ -107,23 +106,6 @@ const Doc = () => (
               {job.description ?
               <Text style={[styles.footerText, { marginTop: 10 }]}>{job.description}</Text>
               : null}
-            </View>
-          ))}
-          {/** Education Section */}
-          <Text style={[styles.title, { marginTop: 20 }]}>{ln('educationText')}</Text>
-          {getLocale().education.map((edu, index) => (
-            <View key={index} style={{ marginTop: 5, textAlign: 'left', alignItems: 'flex-start' }}>
-              <Link src={edu.src} style={{ textDecoration: 'none' }}>
-                <Text style={styles.footerText}>{edu.date}</Text>
-                <Text style={styles.text}>{edu.title}</Text>
-                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-                  <Text style={styles.footerText}>{edu.institution} - {edu.location}</Text>
-                  <PdfIcon height={7} name="externalLinkIcon" color={colorVars.primaryColor} isOutlined />
-                </View>
-              </Link>
-              {edu.description &&
-              <Text style={[styles.footerText, { marginTop: 10 }]}>{edu.description}</Text>
-              }
             </View>
           ))}
         </View>
@@ -155,12 +137,22 @@ const Doc = () => (
           {getLocale().skills.map((skill, index) => (
             <Text key={index} style={styles.skillText}>{skill}</Text>
           ))}
-          {/** Tools Section */}
-          <Text style={[styles.title, { marginTop: 20 }]}>{ln('toolsText')}</Text>
-          {Config.tools.map((tool, index) => (
-            <View key={index} style={{ textAlign: 'right', alignItems: 'flex-end' }}>
-              <Text style={styles.progbarText}>{tool.name}</Text>
-              <PdfProgBar value={tool.level} width={150} height={4} isOutlined isRounded={false} />
+          {/** Education Section */}
+          <Text style={[styles.title, { marginTop: 20 }]}>{ln('educationText')}</Text>
+          {getLocale().education.map((edu, index) => (
+            <View key={index} style=
+              { index == 0 ? { marginTop: 5, paddingLeft: 30, textAlign: 'right' } : { marginTop: 15, paddingLeft: 30, textAlign: 'right' } }>
+              <Link src={edu.src} style={{ textDecoration: 'none', textAlign: 'right', alignItems: 'flex-end', justifyContent: 'flex-end' }}>
+                <Text style={styles.footerText}>{edu.date}</Text>
+                <Text style={styles.text}>{edu.title}</Text>
+                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                  <Text style={styles.footerText}>{edu.institution} - {edu.location}</Text>
+                  <PdfIcon height={7} name="externalLinkIcon" color={colorVars.primaryColor} isOutlined />
+                </View>
+              </Link>
+              {edu.description &&
+              <Text style={[styles.footerText, { marginTop: 10 }]}>{edu.description}</Text>
+              }
             </View>
           ))}
           {/** Languages Section */}
