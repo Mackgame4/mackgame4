@@ -5,6 +5,8 @@ import {
   StyleSheet,
 } from '@react-pdf/renderer';
 
+import { colorVars } from '@/lib/utils';
+
 const styles = StyleSheet.create({
   body: {
     padding: 5,
@@ -15,7 +17,7 @@ const styles = StyleSheet.create({
 
 const Card = () => (
   <Document>
-    <Page size="A4" orientation="portrait" style={styles.body}>
+    <Page size="C7" orientation="landscape" style={styles.body}>
       <Text>Card</Text>
     </Page>
   </Document>
