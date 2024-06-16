@@ -13,9 +13,6 @@ export const Config = {
     githuLink: 'http://github.com/Mackgame4',
     linkedInUsername: 'fabiomagalhaes104365',
     linkedInLink: 'https://www.linkedin.com/in/fabiomagalhaes104365',
-
-    tools: [
-    ]
 };
 
 export const Locales = {
@@ -85,7 +82,6 @@ export const Locales = {
         experienceText: "WORK EXPERIENCE",
         educationText: "EDUCATION",
         skillsText: "SKILLS",
-        toolsText: "TOOLS",
         languagesText: "LANGUAGES",
     },
     pt: {
@@ -121,7 +117,7 @@ export const Locales = {
             {
                 src: 'https://cecri-blog.vercel.app/',
                 title: 'Desenvolvimento Web',
-                date: 'Freelance',
+                date: 'Freelance (2023)',
                 company: 'Centro de Estudos de Relações Internacionais (CECRI)',
                 location: 'Braga, Portugal',
                 description: '[Trabalhei como desenvolvedor web freelancer para o CECRI - UMINHO, onde desenvolvi um blog para a organização.]',
@@ -172,7 +168,6 @@ export const Locales = {
         experienceText: "EXPERIÊNCIA",
         educationText: "EDUCAÇÃO",
         skillsText: "COMPETÊNCIAS",
-        toolsText: "FERRAMENTAS",
         languagesText: "IDIOMAS",
     },
 };

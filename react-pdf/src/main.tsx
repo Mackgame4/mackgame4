@@ -23,7 +23,7 @@ const files = [
 ]
 
 export default function App() {
-  const [selectedFile, setSelectedFile] = React.useState(files[1]) // Default file
+  const [selectedFile, setSelectedFile] = React.useState(files[0]) // Default file
 
   const handleChangeFile = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedName = e.target.value;

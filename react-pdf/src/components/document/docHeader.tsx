@@ -1,12 +1,6 @@
-import {
-    View,
-    Text,
-    Image,
-    StyleSheet,
-} from '@react-pdf/renderer';
-
-import { colorVars, getLocale } from '../lib/utils';
-import { Config } from '../lib/config';
+import { View, Text, Image, StyleSheet } from '@react-pdf/renderer';
+import { colorVars, getLocale } from '@/lib/utils';
+import { Config } from '@/lib/config';
 
 const styles = StyleSheet.create({
     title: {
@@ -58,23 +52,23 @@ const styles = StyleSheet.create({
     },
 });
 
-const DocHeader = () => (
-    <View style={styles.header}>
-        <View style={styles.leftContainer}>
-            <Text style={[styles.title, { fontFamily: 'CaviarDreams-Regular', color: colorVars.textColor}]}>{Config.firstName}</Text>
-            <Text style={[styles.title, { color: colorVars.primaryColor}]}>{Config.lastName}</Text>
-            <View style={{ flexDirection: 'row' }}>
-                {getLocale().badges.map((badge, index) => (
-                    <Text key={index} style={styles.badge}>{badge}</Text>
-                ))}
+export default function DocHeader() {
+    return (
+        <View style={styles.header}>
+            <View style={styles.leftContainer}>
+                <Text style={[styles.title, { fontFamily: 'CaviarDreams-Regular', color: colorVars.textColor}]}>{Config.firstName}</Text>
+                <Text style={[styles.title, { color: colorVars.primaryColor}]}>{Config.lastName}</Text>
+                <View style={{ flexDirection: 'row' }}>
+                    {getLocale().badges.map((badge, index) => (
+                        <Text key={index} style={styles.badge}>{badge}</Text>
+                    ))}
+                </View>
+            </View>
+            <View style={styles.rightContainer}>
+                <View style={styles.avatarContainer}>
+                    <Image style={styles.avatarImage} src={Config.imageURL} />
+                </View>
             </View>
         </View>
-        <View style={styles.rightContainer}>
-            <View style={styles.avatarContainer}>
-                <Image style={styles.avatarImage} src={Config.imageURL} />
-            </View>
-        </View>
-    </View>
-);
-
-export default DocHeader;
+    );
+}
