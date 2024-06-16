@@ -8,12 +8,12 @@ import {
   StyleSheet,
 } from '@react-pdf/renderer';
 
-import { colorVars, ln, getLocale } from './Utils';
-import { Config } from './Config';
+import { colorVars, ln, getLocale } from '@/lib/utils';
+import { Config } from '@/lib/config';
 
-import DocHeader from './components/docHeader';
+import DocHeader from '@/components/docHeader';
 
-import PdfIcon from './components/pdfIcons';
+import PdfIcon from '@/components/pdfIcons';
 
 const styles = StyleSheet.create({
   body: {

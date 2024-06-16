@@ -5,8 +5,8 @@ import {
     StyleSheet,
 } from '@react-pdf/renderer';
 
-import { colorVars, getLocale } from '../Utils';
-import { Config } from '../Config';
+import { colorVars, getLocale } from '../lib/utils';
+import { Config } from '../lib/config';
 
 const styles = StyleSheet.create({
     title: {

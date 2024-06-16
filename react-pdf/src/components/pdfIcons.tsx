@@ -8,7 +8,7 @@ import {
     StyleSheet
 } from '@react-pdf/renderer';
 
-import { colorVars } from '../Utils';
+import { colorVars } from '../lib/utils';
 
 const styles = StyleSheet.create({
     icon: {
