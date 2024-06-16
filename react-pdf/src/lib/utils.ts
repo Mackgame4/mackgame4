@@ -1,5 +1,6 @@
 import '@/lib/fonts';
-import { Config, Locales, Themes } from '@/lib/config';
+import { Config, Locales } from '@/lib/config';
+import Themes from '@/lib/themes';
 
 export function getTheme(theme: string) {
     const [themeName, mode] = theme.split('-');
