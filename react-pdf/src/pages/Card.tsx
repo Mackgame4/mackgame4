@@ -17,7 +17,7 @@ const Card = () => (
       <CardFront />
     </Page>
     {/** Card Back Section */}
-    <Page size="C7" orientation="landscape" style={[styles.body, { padding: 10, paddingHorizontal: 15 }]}>
+    <Page size="C7" orientation="landscape" style={styles.body}>
       <CardBack />
     </Page>
   </Document>

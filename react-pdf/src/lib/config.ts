@@ -83,6 +83,7 @@ export const Locales = {
         educationText: "EDUCATION",
         skillsText: "SKILLS",
         languagesText: "LANGUAGES",
+        moreInfo: "More Info",
     },
     pt: {
         /* Config */
@@ -169,5 +170,6 @@ export const Locales = {
         educationText: "EDUCAÇÃO",
         skillsText: "COMPETÊNCIAS",
         languagesText: "IDIOMAS",
+        moreInfo: "Mais informação",
     },
 };
