@@ -1,11 +1,4 @@
-import {
-  Document,
-  View,
-  Text,
-  Page,
-  StyleSheet,
-} from '@react-pdf/renderer';
-
+import { Document, View, Text, Page, StyleSheet } from '@react-pdf/renderer';
 import { colorVars, ln, getLocale } from '@/lib/utils';
 import { Config } from '@/lib/config';
 

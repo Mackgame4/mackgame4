@@ -1,20 +1,11 @@
-import {
-    Svg,
-    Path,
-    Rect,
-    Circle,
-    Line,
-    Polyline,
-    StyleSheet
-} from '@react-pdf/renderer';
-
-import { colorVars } from '../lib/utils';
+import { Svg, Path, Rect, Circle, Line, Polyline, StyleSheet } from '@react-pdf/renderer';
+import { colorVars } from '@/lib/utils';
 
 const styles = StyleSheet.create({
     icon: {
         width: 16,
         height: 16,
-    },
+    }
 });
 
 type IconProps = {
