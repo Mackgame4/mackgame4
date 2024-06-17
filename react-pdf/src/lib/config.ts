@@ -1,14 +1,18 @@
+const dotenv = import.meta.env; // Vite process.env
+
+console.log('dotenv', dotenv);
+
 export const Config = {
     defaultTheme: 'green-light',
     defaultLocale: 'pt',
 
-    firstName: 'Fábio',
-    lastName: 'Magalhães',
+    firstName: dotenv.VITE_NAME_SECRET || 'Name',
+    lastName: dotenv.VITE_SURNAME_SECRET || 'Surname',
     userName: '',
     imageURL: '/profile.png',
 
-    phoneNumber: '+351 927 728 801',
-    email: 'fabiomagalhaes454@gmail.com',
+    phoneNumber: dotenv.VITE_PHONE_SECRET || '+351 000 000 000',
+    email: dotenv.VITE_EMAIL_SECRET || 'email@gmail.com',
     githubUsername: 'Mackgame4',
     githuLink: 'http://github.com/Mackgame4',
     linkedInUsername: 'fabiomagalhaes104365',
