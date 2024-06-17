@@ -1,4 +1,6 @@
-Hi 👋 My name is CodeWithFab (Mackgame4)
+Hi <!--👋-->
+<img width="30" src="./waving_hand.svg" alt="Waving Hand Animated" />
+My name is CodeWithFab (Mackgame4)
 ==========================
 ![Badge](https://img.shields.io/badge/Software_Engineer-black)
 ![Badge](https://img.shields.io/badge/Full_Stack_Developer-black)
