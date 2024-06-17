@@ -1,7 +1,5 @@
 const dotenv = import.meta.env; // Vite process.env
 
-console.log('dotenv', dotenv);
-
 export const Config = {
     defaultTheme: 'green-light',
     defaultLocale: 'pt',
