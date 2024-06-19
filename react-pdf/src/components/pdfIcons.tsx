@@ -72,6 +72,16 @@ export const LinkedInIcon = ({ width, height, color, strokeWidth, isOutlined }: 
     </Svg>
 );
 
+export const FolderIcon = ({ width, height, color, strokeWidth, isOutlined }: IconProps) => (
+    <Svg width={width || styles.icon.width} height={height || styles.icon.height} viewBox="0 0 24 24" fill="none">
+        <Path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+        stroke={isOutlined ? color || colorVars.primaryColor : 'none'}
+        fill={!isOutlined ? color || colorVars.primaryColor : 'none'}
+        stroke-linecap="round" stroke-linejoin="round"
+        strokeWidth={strokeWidth || 2} />
+    </Svg>
+);
+
 export const ExternalLinkIcon = ({ width, height, color, strokeWidth, isOutlined }: IconProps) => (
     <Svg width={width || styles.icon.width} height={height || styles.icon.height} viewBox="0 0 24 24" fill="none">
         <Path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
@@ -91,6 +101,7 @@ export const ExternalLinkIcon = ({ width, height, color, strokeWidth, isOutlined
         strokeWidth={strokeWidth || 2} />
     </Svg>
 );
+
 /* Icon wrapper */
 const PdfIcon = ({ name, ...props }: { name: string } & IconProps) => {
     switch (name) {
@@ -102,6 +113,8 @@ const PdfIcon = ({ name, ...props }: { name: string } & IconProps) => {
             return <GithubIcon {...props} />;
         case 'linkedInIcon':
             return <LinkedInIcon {...props} />;
+        case 'folderIcon':
+            return <FolderIcon {...props} />;
         case 'externalLinkIcon':
             return <ExternalLinkIcon {...props} />;
         default:

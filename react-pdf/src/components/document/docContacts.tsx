@@ -22,6 +22,10 @@ export default function DocContacts() {
     return (
         <View style={styles.container}>
             <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 5 }}>
+                <PdfIcon height={12} name="folderIcon" color={colorVars.primaryColor} isOutlined />
+                <Link style={[styles.link, { marginLeft: 5, letterSpacing: 0.5 }]} src={Config.websiteUrl}>{Config.websiteUrl}</Link>
+            </View>
+            <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 5 }}>
                 <PdfIcon height={12} name="phoneIcon" color={colorVars.primaryColor} isOutlined />
                 <Link style={[styles.link, { marginLeft: 5, letterSpacing: 0.5 }]} src={`tel:${Config.phoneNumber}`}>{Config.phoneNumber}</Link>
             </View>

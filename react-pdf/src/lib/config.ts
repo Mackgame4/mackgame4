@@ -9,6 +9,7 @@ export const Config = {
     userName: '',
     imageURL: '/profile.png',
 
+    websiteUrl: 'https://mackgame4.github.io/',
     phoneNumber: dotenv.VITE_PHONE_SECRET || '+351 000 000 000',
     email: dotenv.VITE_EMAIL_SECRET || 'email@gmail.com',
     githubUsername: 'Mackgame4',
