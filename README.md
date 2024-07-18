@@ -9,7 +9,7 @@ My name is CodeWithFab (Mackgame4)
 I am a software engineer with a passion for developing and designing software. Studying "Informatic Engineering", IT, <!--at the University of Minho,--> where I am learning about the fundamentals of computers, algorithms, hardware, data science, and software engineering. I am also a full stack developer with experience as freelance in web development and mobile development and many more.
 
 * 🌍  I'm based in Portugal
-* 🖥️  See my blog at [my portfolio](http://mackgame4.github.io/)
+* 🖥️  See my blog at [my portfolio](https://codewithfab.vercel.app/)
 <!--* ✉️  You can contact me at [mail@gmail.com](mailto:mail@gmail.com)-->
 
 <!--<a href="https://visitcount.itsvg.in"><img src="https://visitcount.itsvg.in/api?id=Mackgame4&label=Profile%20Views&color=12&icon=0&pretty=true" /></a>
