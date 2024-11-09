@@ -13,14 +13,17 @@ I am a software engineer with a passion for developing and designing software. S
 <!--* ✉️  You can contact me at [mail@gmail.com](mailto:mail@gmail.com)-->
 
 <!--<a href="https://visitcount.itsvg.in"><img src="https://visitcount.itsvg.in/api?id=Mackgame4&label=Profile%20Views&color=12&icon=0&pretty=true" /></a>
-</br>-->
+</br>
+<img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=Mackgame4.mackgame4" />-->
 <a href="https://www.github.com/mackgame4" target="_blank" rel="noreferrer"><img
 src="https://img.shields.io/github/followers/mackgame4?logo=github&style=for-the-badge&color=black&labelColor=27272a" /></a>
 <a href="https://www.twitch.tv/mackgame4" target="_blank" rel="noreferrer"><img
 src="https://img.shields.io/twitch/status/mackgame4?logo=twitch&logoColor=white&style=for-the-badge&color=black&labelColor=27272a&label=TWITCH+STATUS" /></a>
 
-<!--# 💫 About Me:
-🔭 I’m currently working on<br>👯 I’m looking to collaborate on<br>🤝 I’m looking for help with<br>🌱 I’m currently learning<br>💬 Ask me about<br>⚡ Fun fact-->
+<!--
+# 💫 About Me:
+🔭 I’m currently working on<br>👯 I’m looking to collaborate on<br>🤝 I’m looking for help with<br>🌱 I’m currently learning<br>💬 Ask me about<br>⚡ Fun fact
+-->
 
 ## 🌐 Socials
 [![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?logo=htmx&logoColor=white)](http://mackgame4.github.io/)
@@ -39,9 +42,8 @@ src="https://img.shields.io/twitch/status/mackgame4?logo=twitch&logoColor=white&
 ![Haskell](https://img.shields.io/badge/Haskell-5e5086?style=for-the-badge&logo=haskell&logoColor=white)
 ![Lua](https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white)
 ![LaTeX](https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white)
-![Shell](https://img.shields.io/badge/Shell-%234D4D4D.svg?style=for-the-badge&logo=windows-terminal&logoColor=white)
+![Shell/PowerShell](https://img.shields.io/badge/Shell/PowerShell-%234D4D4D.svg?style=for-the-badge&logo=iterm2&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white)
 ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
 ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
 ![Node.js](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
@@ -56,17 +58,20 @@ src="https://img.shields.io/twitch/status/mackgame4?logo=twitch&logoColor=white&
 ![Sass](https://img.shields.io/badge/sass-%23CC6699.svg?style=for-the-badge&logo=sass&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
+<!--
 ## 📊 GitHub Stats
 ![](https://github-readme-stats.vercel.app/api?username=Mackgame4&theme=shadow_green&hide_border=true&include_all_commits=true&count_private=true)<br/>
 ![](https://github-readme-streak-stats.herokuapp.com/?user=Mackgame4&theme=shadow_green&hide_border=true)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=Mackgame4&theme=shadow_green&hide_border=true&include_all_commits=true&count_private=true&layout=compact)
-
-<!--## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=Mackgame4&theme=shadow_green&no-frame=true&no-bg=false&margin-w=4)-->
-
+-->
+<!--
+## 🏆 GitHub Trophies
+![](https://github-profile-trophy.vercel.app/?username=Mackgame4&theme=shadow_green&no-frame=true&no-bg=false&margin-w=4)
+-->
+<!--
 ### 🔝 Top Contributed Public Repo
 ![](https://github-contributor-stats.vercel.app/api?username=Mackgame4&limit=5&theme=shadow_green&combine_all_yearly_contributions=true)
-
+-->
 <!--## 💰 Support Us
 <ul style="list-style-type: none; margin: 0;">
 <li style="display: inline-block; margin-right: 0.25rem;"><a href="https://www.buymeacoffee.com/fghfghfgh"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="150"/></a></li>
