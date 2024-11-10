@@ -59,6 +59,8 @@ src="https://img.shields.io/twitch/status/mackgame4?logo=twitch&logoColor=white&
 ![Sass](https://img.shields.io/badge/sass-%23CC6699.svg?style=for-the-badge&logo=sass&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![PWA](https://img.shields.io/badge/PWA-5C2D91?style=for-the-badge&logo=pwa&logoColor=white)
+![Prolog](https://img.shields.io/badge/Prolog-f43729?style=for-the-badge&logo=protocolsdotio&logoColor=white)
 
 <!--
 <h1 align="center">
