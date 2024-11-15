@@ -26,7 +26,7 @@ src="https://img.shields.io/twitch/status/mackgame4?logo=twitch&logoColor=white&
 [![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.com/users/263676903116898304)
 [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://github.com/Mackgame4)
 [![CodePen](https://img.shields.io/badge/CodePen-%23000000.svg?logo=codepen&logoColor=white)](https://codepen.io/mackgame4)
-[![Dev.to](https://img.shields.io/badge/Dev.to-%230A0A0A.svg?logo=dev.to&logoColor=white)](https://dev.to/mackgame4)
+<!--[![Dev.to](https://img.shields.io/badge/Dev.to-%230A0A0A.svg?logo=dev.to&logoColor=white)](https://dev.to/mackgame4)-->
 [![LeetCode](https://img.shields.io/badge/LeetCode-%23FFA116.svg?logo=leetcode&logoColor=white)](https://leetcode.com/u/Mackgame4/)
 [![HackTheBox](https://img.shields.io/badge/HackTheBox-%239FEF00.svg?logo=hackthebox&logoColor=white)](https://app.hackthebox.com/profile/2136632)
 [![TryHackMe](https://img.shields.io/badge/TryHackMe-%23B61B1B.svg?logo=tryhackme&logoColor=white)](https://tryhackme.com/p/Mackgame4)
