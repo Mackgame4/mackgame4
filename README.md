@@ -19,7 +19,8 @@ I am also a full stack developer with experience as freelance in web development
 * 🌍  I'm from <img src="https://flagsapi.com/PT/shiny/16.png"> **Portugal**
 * 🖥️  See my **work & blog** at [**my portfolio**](https://codewithfab.vercel.app/)
 
-<br>
+<span></span>
+
 <a href="https://www.github.com/mackgame4" target="_blank" rel="noreferrer"><img
 src="https://img.shields.io/github/followers/mackgame4?logo=github&style=for-the-badge&color=black&labelColor=27272a" /></a>
 <a href="https://www.twitch.tv/mackgame4" target="_blank" rel="noreferrer"><img
