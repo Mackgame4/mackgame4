@@ -6,9 +6,17 @@ My name is CodeWithFab (Mackgame4)
 ![Badge](https://img.shields.io/badge/Full_Stack_Developer-black)
 ------------------
 
+<img src="./readme-assets/githubbanner.png" alt="Github Banner" />
+
+<br>
+
+<b>
 I am a software engineer with a passion for developing and designing software.
 Studying "Informatic Engineering", IT, where I am learning about the fundamentals of computers, algorithms, hardware, data science, and software engineering.
 I am also a full stack developer with experience as freelance in web development and mobile development and many more.
+</b>
+
+<span></span>
 
 * 🌍  I'm from <img src="https://flagsapi.com/PT/shiny/16.png"> **Portugal**
 * 🖥️  See my **work & blog** at [**my portfolio**](https://codewithfab.vercel.app/)
