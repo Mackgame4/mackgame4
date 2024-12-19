@@ -8,8 +8,6 @@ My name is CodeWithFab (Mackgame4)
 
 <img src="./readme-assets/githubbanner.png" alt="Github Banner" />
 
-<br>
-
 <b>
 I am a software engineer with a passion for developing and designing software.
 Studying "Informatic Engineering", IT, where I am learning about the fundamentals of computers, algorithms, hardware, data science, and software engineering.
