@@ -49,6 +49,7 @@ src="https://img.shields.io/twitch/status/mackgame4?logo=twitch&logoColor=white&
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vue.js&logoColor=%4FC08D)
 ![Svelte](https://img.shields.io/badge/svelte-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white)
+![Angular](https://img.shields.io/badge/Angular-DD1100?style=for-the-badge&logo=angular&logoColor=white)
 ![Blazor](https://img.shields.io/badge/Blazor-512BD4?style=for-the-badge&logo=blazor&logoColor=white)
 \
 ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
@@ -72,6 +73,7 @@ src="https://img.shields.io/twitch/status/mackgame4?logo=twitch&logoColor=white&
 ![Bash](https://img.shields.io/badge/Bash-%234D4D4D.svg?style=for-the-badge&logo=gnubash&logoColor=white)
 ![Prolog](https://img.shields.io/badge/Prolog-f43729?style=for-the-badge&logo=protocolsdotio&logoColor=white)
 ![KNIME](https://img.shields.io/badge/KNIME-FDD800?style=for-the-badge&logo=knime&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 
 <!--
 <h1 align="center">
