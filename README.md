@@ -1,12 +1,12 @@
 Hi
-<img width="30" src="./readme-assets/waving_hand.svg" alt="Waving Hand Animated" />
+<img width="30" src="./.assets/waving_hand.svg" alt="Waving Hand Animated" />
 My name is CodeWithFab (Mackgame4)
 ==========================
 ![Badge](https://img.shields.io/badge/Software_Engineer-black)
 ![Badge](https://img.shields.io/badge/Full_Stack_Developer-black)
 ------------------
 
-<img src="./readme-assets/githubbanner.png" alt="Github Banner" />
+<img src="./.assets/githubbanner.png" alt="Github Banner" />
 
 <b>
 I am a software engineer with a passion for developing and designing software.
@@ -104,4 +104,4 @@ src="https://img.shields.io/twitch/status/mackgame4?logo=twitch&logoColor=white&
 </ul>
 -->
 
-<img src="./readme-assets/snake.svg" alt="Snake Animated" />
+<img src="./.assets/snake.svg" alt="Snake Animated" />
