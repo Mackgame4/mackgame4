@@ -23,19 +23,23 @@ I am also a full stack developer with experience as freelance in web development
 
 <a href="https://www.github.com/mackgame4" target="_blank" rel="noreferrer"><img
 src="https://img.shields.io/github/followers/mackgame4?logo=github&style=for-the-badge&color=black&labelColor=27272a" /></a>
+<!--
 <a href="https://www.twitch.tv/mackgame4" target="_blank" rel="noreferrer"><img
 src="https://img.shields.io/twitch/status/mackgame4?logo=twitch&logoColor=white&style=for-the-badge&color=black&labelColor=27272a&label=TWITCH+STATUS" /></a>
+-->
 
 ## 🌐 Socials
 [![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?logo=htmx&logoColor=white)](http://mackgame4.github.io/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fabiomagalhaes104365)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=indeed&logoColor=white)](https://www.linkedin.com/in/fabiomagalhaes104365)
 [![Twitch](https://img.shields.io/badge/Twitch-%239146FF.svg?logo=twitch&logoColor=white)](https://www.twitch.tv/mackgame4)
 [![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.com/users/263676903116898304)
 [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://github.com/Mackgame4)
 [![CodePen](https://img.shields.io/badge/CodePen-%23000000.svg?logo=codepen&logoColor=white)](https://codepen.io/mackgame4)
+<!--
 [![LeetCode](https://img.shields.io/badge/LeetCode-%23FFA116.svg?logo=leetcode&logoColor=white)](https://leetcode.com/u/Mackgame4/)
 [![HackTheBox](https://img.shields.io/badge/HackTheBox-%239FEF00.svg?logo=hackthebox&logoColor=white)](https://app.hackthebox.com/profile/2136632)
 [![TryHackMe](https://img.shields.io/badge/TryHackMe-%23B61B1B.svg?logo=tryhackme&logoColor=white)](https://tryhackme.com/p/Mackgame4)
+-->
 
 ## 💻 Tech Stack
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
