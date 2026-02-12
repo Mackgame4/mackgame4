@@ -17,7 +17,7 @@ I am also a full stack developer with experience as freelance in web development
 <span></span>
 
 * 🌍  I'm from <img src="https://flagsapi.com/PT/shiny/16.png"> **Portugal**
-* 🖥️  See my **work & blog** at [**my portfolio**](https://codewithfab.vercel.app/)
+* 🖥️  See my **work & blog** at [**my portfolio**](https://mackgame4.github.io/)
 
 <span></span>
 
@@ -58,6 +58,7 @@ src="https://img.shields.io/twitch/status/mackgame4?logo=twitch&logoColor=white&
 \
 ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
 ![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
+![ExpressJS](https://img.shields.io/badge/express-0769AD?style=for-the-badge&logo=express&logoColor=white)
 ![HTML5](https://img.shields.io/badge/html-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![Sass](https://img.shields.io/badge/sass-%23CC6699.svg?style=for-the-badge&logo=sass&logoColor=white)
