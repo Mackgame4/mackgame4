@@ -1,6 +1,6 @@
 Hi
 <img width="30" src="./.assets/waving_hand.svg" alt="Waving Hand Animated" />
-My name is CodeWithFab (Mackgame4)
+My name is Fabio (Mackgame4) Magalhaes
 ==========================
 ![Badge](https://img.shields.io/badge/Software_Engineer-black)
 ![Badge](https://img.shields.io/badge/Full_Stack_Developer-black)
